@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    --space:5px;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ui{
+    position: absolute;
+    left: 0;
+    background-color: #ffffffaa;
+}
+#debug{
+    padding: var(--space);
+    top: var(--space);
+    background-color: #ffffff11;
+}
+.control{
+    width: 100%;
+    max-width: 600px;
+    bottom: 0;
+}
+#hide{
+    height: 20px;
+    width: 100%;
+    margin-bottom: var(--space);
+    background-color: inherit;
+    border-width: 0;
+}
+#hide:hover{
+    background-color: #00000011;
+}
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--space);
+    padding-bottom: 50px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5px;
+}
+.data{
+    width: 20%;
+    border-radius: 5px;
+    border-color: #000000aa;
+}
+.num{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* color: bla; */
+}
+#create{
+    width: 80%;
+    border-radius: 5px;
+    border-color: #000000aa;
+}
+#create:hover{
+    background-color: #00000011;
+}
+.side{
+    position: absolute;
+    display: flex;
+
+    width: 15%;
+    bottom: var(--space);
+
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: beige;
+}
+#remove{
+    right: var(--space);
+}
+#remove:hover{
+    background-color: tomato;
+}
+.content > p{
+    position: absolute;
+
+    padding: 1px 4px;
+    color: black;
+    bottom: var(--space);
+    left: var(--space);
+}
