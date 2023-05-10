@@ -33,26 +33,6 @@ plane.rotation.set(-Math.PI * 0.5, 0, 0);
 plane.position.y = -0.05;
 scene.add(plane);
 
-// function createSolidLink(ref, w, h, d){
-//     const geometry = new THREE.BoxGeometry( w, h, d );
-//     const material = new THREE.MeshPhongMaterial( { color: 0xaaaaaa } );
-//     const cube = new THREE.Mesh( geometry, material );
-
-//     ref.add(cube);
-//     return cube;
-// }
-// cube = createSolidLink(scene, 2, 1, 1);
-// cube.position.z = -4;
-// cube.position.y = 0.5;
-// cube.rotation.y = 60*toRadian;
-
-// const dirLight = new THREE.DirectionalLight(0xffffff, 1);
-// dirLight.position.set(5,5,5);
-// dirLight.lookAt(0,0,0);
-// const ambLight = new THREE.AmbientLight(0xffffff,0.5);
-// scene.add(dirLight);
-// scene.add(ambLight);
-
 const objs = [];
 const axs = [];
 const axesSize = 1;
